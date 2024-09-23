@@ -1,0 +1,35 @@
+.box{
+    color: antiquewhite;
+    table-layout: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-size-adjust: auto;
+    border: 2px;
+    padding:auto;
+    height: auto;
+    width: 80%;
+    text-align:left;
+    position: static;
+    margin: auto;
+    size: 50%;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+}
+h2{
+    text-align: center;
+}
+
+body{
+    background:linear-gradient(to right,rgb(135, 110, 35),purple);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("images/bc5.jpg"); grid-auto-flow: initial; 
+    background-position: center;
+    background-size: cover;
+}
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+}

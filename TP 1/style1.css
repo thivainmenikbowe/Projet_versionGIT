@@ -1,0 +1,38 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(178, 117, 117);
+    text-align: center;
+    
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: burlywood;
+    text-align: center;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    color: burlywood;
+    
+}
+body{
+        background:linear-gradient(to right,rgb(135, 110, 35),purple);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url("images/bc2.jpeg");
+        background-position: center;
+        background-size: cover;
+}
+
+table{
+    position: static;
+    margin:auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+    
