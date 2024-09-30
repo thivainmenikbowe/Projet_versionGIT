@@ -1,0 +1,33 @@
+.block1
+{
+    background-color: rgb(223, 142, 37);
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+body{
+    background-color:bisque;
+}
+
+.block2
+{
+margin: 20px;
+margin-left: 20px;
+height: 200px;
+width: 200px;
+
+background-color: blue;
+float :right;
+}
+
+.block3
+{
+    margin-left: 20px;
+    height: 100px;
+    width: 150px;
+
+    background-color: brown;
+    clear: both;
+}
