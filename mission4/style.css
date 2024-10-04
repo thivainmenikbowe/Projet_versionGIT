@@ -1,0 +1,218 @@
+header{
+    background-color: rgb(227, 13, 13);
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.main{
+    width: 780px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: beige;
+    border-color: #3388CC;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+footer{
+ height: 10%;
+ width: 98%;
+ background-color: black;
+ text-align:center;
+}
+
+@media only screen and (max-width: 768px) {
+    [class="main"] {
+      width: 100%;
+    }
+  }
+
+.prof{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    margin-top: 4px;
+}
+.image{
+    height: 90%;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 2%;
+}
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 90%;
+    width: 60%;
+    margin: auto;
+    margin-left: 2%;
+    margin-top: 55px;
+    border-radius: 5px;
+    background-color:  transparent;
+    
+}
+
+.formation{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+
+}
+.dates{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80%;
+    width: 30%;
+    margin: auto;
+    margin-left: 2%;
+    margin-top: -2%;
+    float: left;
+}
+.forms{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80%;
+    width:60%;
+    margin: auto;
+    margin-right: 2%;
+    margin-top: -2%;
+    float: right;
+}
+.forms p{
+    text-size-adjust:  20px;
+    margin-left: 1%;
+}
+.dates p{
+    margin-left: 1%;
+}
+.formation p{
+    text-size-adjust:  20px;
+    margin-top: 2%;
+    display: flex;
+    margin-left: 5%;
+}
+.experience{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+}
+.experience p{
+    text-size-adjust:  20px;
+    margin-top: 3px;
+    display: flex;
+    margin-left: 5%;
+}
+.dates2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 75%;
+    width: 30%;
+    margin: auto;
+    margin-left: 2%;
+    margin-top: -2%;
+    float: left;
+}
+.dates2 p{
+    margin-top: 10%;
+}
+.exper p{
+    text-size-adjust:  20px;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.exper{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 75%;
+    width: 60%;
+    margin: auto;
+    margin-right: 2%;
+    margin-top: -2%;
+    float: right;
+    
+}
+
+.language p{
+    margin-top: -2px;
+    margin-bottom: 0;
+    display: grid;
+    margin-left: 5%;
+}
+.language{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+
+}
+.lang{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80%;
+    width: 20%;
+    margin: auto;
+    margin-left: 2%;
+    margin-top: 1%;
+    float: left;
+
+}
+
+.info{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    margin-right: 2%;
+    margin-top: 1%;
+    float: right;
+}
+.other{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+
+}
+.infor{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 55%;
+    width: 60%;
+    margin: auto;
+    margin-right: 2%;
+    margin-top: 2%;
+    float: right;
+}
+.dates3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 55%;
+    width: 28%;
+    margin: auto;
+    margin-left: 2%;
+    margin-top: 2%;
+    float: left;
+}
+.other p{
+    margin-top: 1%;
+    margin-bottom: 0;
+    display: grid;
+    margin-left: 5%;
+
+}
+
+body{
+    background-color: antiquewhite;
+}
+hr{
+    margin-top: -2%;
+    width: 50%;
+    float: left;
+}
