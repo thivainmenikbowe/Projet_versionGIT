@@ -121,3 +121,9 @@ footer{
     background-color: rgb(42, 99, 165);
     clear: both;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+      width: auto;
+      height: auto;
+    }
