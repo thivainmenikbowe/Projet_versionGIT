@@ -51,18 +51,18 @@ function calcul_moyenne(){
 
     document.write("Voici la moyenne : " + moyenne + "<br>");
 
-    if (moyenne <=10)
+    if (moyenne <10)
         {
             document.write("Refusé !!!");
             document.body.style.backgroundColor="red";
         }
-    else if (10 < moyenne <=14)
+    else if ( moyenne <=14)
     {
         document.write("Admis passable");
         document.body.style.backgroundColor="orange";
     }
 
-    if ( moyenne >=15)
+    if ( moyenne >14)
     {
         document.write("Admis Bien!!!");
         document.body.style.backgroundColor="green";
