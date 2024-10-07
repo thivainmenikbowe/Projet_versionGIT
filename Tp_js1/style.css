@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    border-radius: 25px;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    border: 2px solid white;
+    color: aliceblue;
+    margin: 30px;
+    transition: 0.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 150ms;
+}
+
+
