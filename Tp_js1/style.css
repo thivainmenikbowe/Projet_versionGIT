@@ -22,4 +22,9 @@ button:hover{
     transition: 150ms;
 }
 
-
+footer{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin-top: 10%;
+}
