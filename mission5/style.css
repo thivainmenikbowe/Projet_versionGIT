@@ -256,5 +256,22 @@ body{
     .menu:hover{
         display: list-item;
         position: absolute;
+        cursor: pointer;
+    }
+
+    .menu li:hover {
+        cursor: pointer;
+        display: list-item;
+        position: relative;
+    }
+
+    .sousmenu {
+        position: relative;
+    }
+
+    nav > ul >li:focus-within .sousmenu,
+    nav > ul >li:active .sousmenu{
+        display: block;
+        position: relative;
     }
 }
