@@ -1,282 +1,105 @@
-/* Étape 1: Reset CSS et définition de la police */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, sans-serif;
-}
-
-/* Étape 2: Mise en forme de base du menu */
-nav>ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-nav>ul>li {
-    position: relative;
-    padding: 8px;
-    flex-grow: 1;
-}
-
-nav>ul>li>a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: white;
-}
-
-/* Cacher les sous-menus par défaut */
-.sousmenu {
-    display: none;
-    list-style-type: none;
-}
-
-/* Étape 3: Mise en forme avancée du menu */
-.navbar {
-    background-color: #333;
-    width: 100%;
-}
-
-/* Hack clearfix pour gérer la hauteur du menu */
-.navbar ul::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Mise en surbrillance des onglets au survol */
-nav>ul>li:hover {
-    background-color: #555;
-}
-
-nav>ul>li:hover::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #ff9900;
-    /* Couleur de la bordure supérieure */
-}
-
-/* Étape 4: Mise en forme des sous-menus */
-nav>ul>li:hover .sousmenu {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 1000;
-    border: 1px solid #ddd;
-    border-style: solid;
-}
-
-.sousmenu li {
-    width: 100%;
-}
-
-.sousmenu li a {
-    padding: 10px 15px;
-    font-size: 14px;
-    color: #333;
-    display: block;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.sousmenu li:hover a {
-    background-color: #f0f0f0;
-    font-weight: bold;
-    color: #EEE;
-}
-
-.html .sousmenu li:hover a {
-    background-color: #0FFF50;
-    color: #000;
-}
-
-.java .sousmenu li:hover a {
-    background-color: #00fff2;
-    color: #000;
-}
-
-.bdd .sousmenu li:hover a {
-    background-color: #ff35cc;
-    color: #000;
-}
-
-.mission .sousmenu li:hover a {
-    background-color: #FFFF00;
-    color: #000;
-}
-
-.php .sousmenu li:hover a {
-    background-color: #ff0000;
-    color: #000;
-}
-
-.cert .sousmenu li:hover a {
-    background-color: #2b00ff;
-    color: #000;
-}
-
-.html li {
-    background-color: #0ec23e;
-    color: #000;
-}
-.html:hover{
-    background-color: #0ec23e;
-    border-top:5px #0FFF50;
-    border-style: solid;
-    opacity: 95%;
-}
-
-
-.java li {
-    background-color: #00fff2d3;
-    border-top: 5px;
-}
-.java:hover{
-    background-color: #00fff2d3;
-    border-top:5px #00fff2;
-    border-style: solid;
-    opacity: 95%;
-}
-
-
-.bdd li {
-    background-color: #f014b9;
-}
-.bdd:hover{
-    background-color: #f014b9;
-    border-top:5px #ff35cc;
-    border-style: solid;
-    opacity: 95%;
-}
-
-
-.mission li {
-    background-color: #dddd2d;
-}
-.mission:hover{
-    background-color: #dddd2d;
-    border-top:5px #FFFF00 ;
-    border-style: solid;
-    color: #000;
-    opacity: 95%;
-}
-
-
-.php li {
-    background-color: #ff0000c4;
-}
-.php:hover{
-    background-color: #ff0000c4;
-    border-top:5px #ff0000;
-    opacity: 95%;
-    border-style: solid;
-}
-
-
-.cert li {
-    background-color: #2a04e7cf;
-}
-.cert:hover{
-    background-color: #2a04e7cf;
-    border-top:5px #2b00ff;
-    border-style: solid;
-    opacity: 95%;
-    
-}
 body{
+    background-color: rgb(156, 145, 145);
+    margin: 0%;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    color: rgb(17, 16, 16);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: aqua;
+    border-color: black;
+    background: linear-gradient(to left, rgb(0, 0, 0),rgb(115, 115, 115));
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("img/JS.jpg");
+    text-align: center;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    background-color: rgb(34, 34, 144);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-style:solid;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 10px;
+    padding: 10px;
+    background:linear-gradient(to left,rgb(17, 17, 13),rgb(49, 48, 49));    
+}
+body{
+    background:linear-gradient(to right,rgb(135, 110, 35),purple);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../images/background.jpg");
     background-position: center;
     background-size: cover;
 }
-.menu-checkbox {
-    display: none;
+#box1{
+    border: 2px solid;
+    height: 300px;
+    width: 300px;    
+    background-image: url(images/JS.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.menu-label {
-    display: none; 
+#box2{border: 2px solid;
+    height: 300px;
+    width: 300px;    
+    background-image: url(../images/MOD.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box3{border: 2px solid;
+    height: 300px;
+    width: 300px;    
+    background-image: url(../images/NK1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: antiquewhite;
+    color: black;
+    padding: 10px 15px;
     cursor: pointer;
-    padding: 10px;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    width: 100%;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-.burger-icon {
+}
+.dropdown a{
     display: block;
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    position: relative;
-    margin: 6px auto;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
 }
-
-
-@media (max-width: 680px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background-color: rgba(29, 29, 51, 0.97);
-        padding: 12px;
-    }
-    
-    .menu li {
-        padding: 12px 0;
-        text-align: center;
-        display: block;
-    }
-
-
-    .menu-label {
-        display: block;
-        padding: 10px 15px;
-        background-color: #333;
-        color: white;
-        text-align: center;
-    }
-
-
-    .menu-checkbox:checked + .menu-label + nav .menu {
-        display: flex;
-    }
-
-    .menu:hover{
-        display: list-item;
-        position: absolute;
-        cursor: pointer;
-    }
-
-    .menu li:hover {
-        cursor: pointer;
-        display: list-item;
-        position: relative;
-    }
-
-    .sousmenu {
-        position: relative;
-    }
-
-    nav > ul >li:focus-within .sousmenu,
-    nav > ul >li:active .sousmenu{
-        display: block;
-        position: relative;
-    }
-    
-    nav > ul >li:hover .sousmenu{
-        display: block;
-        position: relative;
-    }
+.dropdown .content{
+    display: none;
+    background-color: wheat;
+    position: absolute;
+    min-width: 105px;
+    box-shadow: 2px 2px 5px;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: bisque;
+}
+.dropdown a:hover{
+    background-color: cornsilk;
+}
+.content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
