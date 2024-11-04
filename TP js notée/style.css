@@ -1,0 +1,80 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input{
+    width: 200px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.5em;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.main{  
+    height: 50%;
+    width: 80%;
+    background-color: blue;
+    margin: auto;
+    border-radius: 10px;
+}
+
+div p{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: pink;
+    text-align: center;
+
+}
+
+
+div.A{
+    border: 1px solid black;
+    float: inline-start;
+}
+
+div.P{
+    float: inline-start;
+    border: 1px solid black;
+}
+
+div.Q{
+    float: inline-start;
+    border: 1px solid black;
+}
+
+div.R{
+    float: inline-start;
+    border: 1px solid black;
+}
+
+div.lastline{
+    margin-right: 6.3%;
+    border: 1px solid black;
+    clear: both;
+    text-align: end;
+}
+
+button{
+    height: 50px;
+    width: auto;
+    background-color: black;
+    border: 2px solid white;
+    color: aliceblue;
+    margin: 30px;
+    transition: 0.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 150ms;
+}
