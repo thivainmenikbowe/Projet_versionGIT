@@ -1,0 +1,53 @@
+body{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+button{
+    border-radius: 25px;
+    height: 120px;
+    width: 125px;
+    background-color: black;
+    border: 2px solid white;
+    color: aliceblue;
+    margin: 30px;
+    transition: 0.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 150ms;
+}
+
+input.t{
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.5em;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+input.t34{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.5em;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+}
