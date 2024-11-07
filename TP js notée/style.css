@@ -7,7 +7,7 @@ input{
     width: 200px;
     height: 10px;
     background-color: white;
-    border: 2px solid black;
+    border: px solid black;
     border-radius: 10px;
     color: black;
     font-size: 1.5em;
@@ -26,37 +26,40 @@ input{
 }
 
 div p{
-    border: 1px solid black;
+    border: px solid black ;
     border-radius: 5px;
     background-color: pink;
     text-align: center;
+    width: 80%;
+    margin-left: 30px;
+    height: 35px;
 
 }
 
 
 div.A{
-    border: 1px solid black;
+    border: px solid black;
     float: inline-start;
 }
 
 div.P{
     float: inline-start;
-    border: 1px solid black;
+    border: px solid black;
 }
 
 div.Q{
     float: inline-start;
-    border: 1px solid black;
+    border: px solid black;
 }
 
 div.R{
     float: inline-start;
-    border: 1px solid black;
+    border: px solid black;
 }
 
 div.lastline{
     margin-right: 6.3%;
-    border: 1px solid black;
+    border: px solid black;
     clear: both;
     text-align: end;
 }
@@ -65,7 +68,7 @@ button{
     height: 50px;
     width: auto;
     background-color: black;
-    border: 2px solid white;
+    border: px solid white;
     color: aliceblue;
     margin: 30px;
     transition: 0.2;
@@ -75,6 +78,10 @@ button{
 button:hover{
     background-color: white;
     color: black;
-    border: 2px solid black;
+    border: px solid black;
     transition: 150ms;
+}
+
+h1{
+    text-align: center;
 }
