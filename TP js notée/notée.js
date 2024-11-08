@@ -20,3 +20,16 @@ function multiplication(){
     result.value =t
 }
 
+function effacer()
+{
+    r1.value="";
+    p1.value="";
+    q1.value="";
+    r2.value="";
+    p2.value="";
+    q2.value="";
+    r3.value="";
+    p3.value="";
+    q3.value="";
+    
+}
