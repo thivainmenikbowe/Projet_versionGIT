@@ -1,0 +1,61 @@
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    background-color: aqua;
+    height: 110%;
+    width: auto;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 8px;
+}
+.main h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ex{
+    background-color: aquamarine;
+    border-radius: 5px;
+    border-style: solid;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    margin-left: 10%;
+    height: auto;
+    width: 80%;
+}
+
+.ex p{
+    margin-left:5px ;
+}
+
+
+button{
+    margin-left:5px ;
+}
+
+button:hover{
+    cursor: pointer;
+    
+}
+
+footer{
+    height: 40px;
+}
+
+.tt{
+    border: 2px solid black;
+    background-color: bisque;
+    margin: 4px;
+    width: auto;
+    display: none;
+    height: auto;
+    padding:15px;
+    border-radius: 5px;
+}
