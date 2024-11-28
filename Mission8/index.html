@@ -23,7 +23,7 @@
     <p>1. ODD or EVEN
         <br>
         <p>Ecrivez un nombre dans l'arc et il vous dira s'il s'agit d'un nombre IMPAIR ou d'un nombre PAIR.</p>
-        <button onclick="txt()">Voir la solution</button>   <button onclick="one()" class="t1">Voir la démonstration</button>
+        <button onclick="one()">Voir la solution</button>   <button onclick="oddeven()" class="t1">Voir la démonstration</button>
     </p>
     <p id="tt" class="tt">
         
@@ -43,143 +43,195 @@
 
 
 <div id="ex" class="ex">
-    <p>2.SOMMEEEE
+    <p>2.Devinez le nombre
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="two()">Voir la solution</button>   <button onclick="addtask()">Voir la démonstration</button>
+        <p>Le programme génère un nombre aléatoire. L'utilisateur devine jusqu'à trouver le bon.</p>
+        <button onclick="two()">Voir la solution</button>   <button onclick="guessTheNumber() ">Voir la démonstration</button>
     </p>
-    <p id="2" class="tt"> function addTask() { <br>
-        const taskInput = document.getElementById("taskInput");<br>
-        const taskList = document.getElementById("taskList");<br>
-        const task = taskInput.value;<br>
-    
-        if (task.trim() === "") return;<br>
-    
-        const listItem = document.createElement("li");<br>
-        listItem.innerHTML = `${task} <'button onclick="deleteTask(this)">Delete</button>`;<br>
-        taskList.appendChild(listItem);<br>
-    
-        taskInput.value = "";<br>
-       } <br>
-    
-      function deleteTask(button) { <br>
-        button.parentElement.remove(); <br>
+    <p id="2" class="tt"> function guessTheNumber() {<br>
+        let secretNumber = Math.floor(Math.random() * 100) + 1; <br>
+        let guess;<br>
+        do {<br>
+          guess = parseInt(prompt("Guess a number between 1 and 100:"));<br>
+          if (guess < secretNumber) { <br>
+            alert("Too low! Try again."); <br>
+          } else if (guess > secretNumber) { <br>
+            alert("Too high! Try again.");<br>
+          } <br>
+        } while (guess !== secretNumber);<br>
+        alert("Congratulations! You guessed the correct number: " + secretNumber);<br>
       }</p>
 </div>
 
 
 
 
-
+<div id="ex" class="ex">
+    <p>3.Vérifiez l'âge pour voter
+        <br>
+        <p>Vérifie si l'utilisateur est suffisamment âgé pour voter. Nécessite un âge minimum de 18 ans.</p>
+        <button onclick="three()">Voir la solution</button>   <button onclick="v_age()">Voir la démonstration</button>
+    </p>
+    <div id="3" class="tt">function v_age() {<br>
+        let age = parseInt(prompt("Enter your age:"));<br>
+        alert(age >= 18 ? "You are eligible to vote." : "You are not eligible to vote.");<br>
+      }</div>
+</div>
 
 
 <div id="ex" class="ex">
-    <p>3.AAAAAAAAAAAAAAAAAA
+    <p>4.Vérifier le nombre premier
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="sol()">Voir la solution</button>   <button onclick="addTask()">Voir la démonstration</button>
+        <p>Détermine si un nombre n'a que deux diviseurs. Utilise une boucle pour les vérifications de divisibilité.</p>
+        <button onclick="four()">Voir la solution</button>   <button onclick="checkPrimeNumber()">Voir la démonstration</button>
     </p>
-    <div id="3" class="tt">testttttttttttt</div>
+    <div id="4" class="tt">function checkPrimeNumber() { <br>
+        let num = parseInt(prompt("Enter a number to check if it's prime:"));<br>
+        let isPrime = num > 1;<br>
+      
+        for (let i = 2; i <= Math.sqrt(num); i++) { <br>
+          if (num % i === 0) { <br>
+            isPrime = false; <br>
+            break;<br>
+          } <br>
+        } <br>
+      
+        alert(num + (isPrime ? " is a prime number." : " is not a prime number.")); <br>
+      }</div>
 </div>
+
+
+<div id="ex" class="ex">
+    <p>5.Compter les voyelles
+        <br>
+        <p>Compte le nombre de voyelles dans une chaîne. Gère les voyelles majuscules et minuscules</p>
+        <button onclick="five()">Voir la solution</button>   <button onclick="countVowels()">Voir la démonstration</button>
+    </p>
+</div>
+
+<div id="5" class="tt">  function countVowels() { <br>
+    let str = prompt("Enter a string:"); <br>
+    let vowels = str.match(/[aeiouy]/gi); <br>
+    alert("The number of vowels is: " + (vowels ? vowels.length : 0)); <br>
+  }</div>
+
+<div id="ex" class="ex">
+    <p>6.Rechercher un pourcentage
+        <br>
+        <p>Calculez le pourcentage à partir des notes obtenues. Nécessite le total des notes et les notes obtenues.</p>
+        <button onclick="six()">Voir la solution</button>   <button onclick="percentage()">Voir la démonstration</button>
+    </p>
+</div>
+
+<div id="6" class="tt">function percentage() { <br>
+    let marks = parseFloat(prompt("Enter total marks obtained:")); <br>
+    let totalMarks = parseFloat(prompt("Enter maximum marks:")); <br>
+    let percentage = (marks / totalMarks) * 100; <br>
+    alert("Your percentage is: " + percentage + "%"); <br>
+  }</div>
 
 
 <div id="ex" class="ex">
     <p>1.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="seven()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
+
+<div id="5" class="tt"></div>
+
+
 <div id="ex" class="ex">
     <p>1.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="eight()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
-<div id="ex" class="ex">
-    <p>1.SOMME
-        <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
-    </p>
-</div>
-<div id="ex" class="ex">
-    <p>1.SOMME
-        <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
-    </p>
-</div>
-<div id="ex" class="ex">
-    <p>1.SOMME
-        <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
-    </p>
-</div>
+
+<div id="5" class="tt"></div>
+
+
 <div id="ex" class="ex">
     <p>1.addition 
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-   
-        <button onclick="sol()">Voir la solution</button>
-          <button>Voir la démonstration</button>
-          <div id="sol" class="sol">
-            
+        <button onclick="nine()">Voir la solution</button> <button>Voir la démonstration</button>
     </p>
-        </div>
 </div>
+
+<div id="5" class="tt"></div>
+
 
 
 <div id="ex" class="ex">
     <p>1.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="ten()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
+
+<div id="5" class="tt"></div>
+
+
 <div id="ex" class="ex">
     <p>1.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="eleven()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
+
+<div id="5" class="tt"></div>
+
+
 <div id="ex" class="ex">
     <p>1.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="twelve()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
+
+<div id="5" class="tt"></div>
+
+
 <div id="ex" class="ex">
     <p>1.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="thirteen()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
+
+<div id="5" class="tt"></div>
+
+
 <div id="ex" class="ex">
     <p>1.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="fourteen()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
+
+<div id="5" class="tt"></div>
+
+
 <div id="ex" class="ex">
     <p>2.SOMME
         <br>
         <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button>Voir la solution</button>   <button>Voir la démonstration</button>
+        <button onclick="fifteen()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
     </p>
 </div>
 
+<div id="5" class="tt"></div>
 
 
-    <footer>
-
-</footer>
+<footer></footer>
 
 </div>
 </body>
