@@ -10,7 +10,7 @@
 
 <body>
 
-<header>
+<header><button><a href="../index.html">HOME</button>
         <h1><u>Exersice avec JAVA</u></h1>
 </header>
 
@@ -101,19 +101,25 @@
 </div>
 
 
+
+
 <div id="ex" class="ex">
     <p>5.Compter les voyelles
         <br>
         <p>Compte le nombre de voyelles dans une chaîne. Gère les voyelles majuscules et minuscules</p>
         <button onclick="five()">Voir la solution</button>   <button onclick="countVowels()">Voir la démonstration</button>
     </p>
-</div>
 
 <div id="5" class="tt">  function countVowels() { <br>
     let str = prompt("Enter a string:"); <br>
     let vowels = str.match(/[aeiouy]/gi); <br>
     alert("The number of vowels is: " + (vowels ? vowels.length : 0)); <br>
   }</div>
+
+</div>
+
+
+
 
 <div id="ex" class="ex">
     <p>6.Rechercher un pourcentage
@@ -131,104 +137,173 @@
   }</div>
 
 
-<div id="ex" class="ex">
-    <p>1.SOMME
-        <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="seven()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
-    </p>
-</div>
-
-<div id="5" class="tt"></div>
-
-
-<div id="ex" class="ex">
-    <p>1.SOMME
-        <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="eight()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
-    </p>
-</div>
-
-<div id="5" class="tt"></div>
-
-
-<div id="ex" class="ex">
-    <p>1.addition 
-        <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="nine()">Voir la solution</button> <button>Voir la démonstration</button>
-    </p>
-</div>
-
-<div id="5" class="tt"></div>
 
 
 
 <div id="ex" class="ex">
-    <p>1.SOMME
+    <p>7. Table de multiplication
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="ten()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
+        <p>Génère la table de multiplication d'un nombre. Affiche les résultats de 1 à 10.</p>
+        <button onclick="seven()">Voir la solution</button>   <button onclick="multiplicationTable() ">Voir la démonstration</button>
     </p>
 </div>
 
-<div id="5" class="tt"></div>
+<div id="7" class="tt">function multiplicationTable() {<br>
+    let num = parseInt(prompt("Enter a number to display its multiplication table:"));<br>
+    let result = "";<br>
+    for (let i = 1; i <= 10; i++) { <br>
+      result += num + " x " + i + " = " + (num * i) + "\n"; <br>
+    } <br>
+    alert(result); <br>
+    } <br>
+  </div>
+
+
+
 
 
 <div id="ex" class="ex">
-    <p>1.SOMME
+    <p>8. Convertir les degrés Celsius en degrés Fahrenheit
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="eleven()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
+        <p>Convertit la température de degrés Celsius en degrés Fahrenheit. Utilise la formule de conversion standard.</p>
+        <button onclick="eight()">Voir la solution</button>   <button onclick="convertCtoF()">Voir la démonstration</button>
     </p>
 </div>
 
-<div id="5" class="tt"></div>
+<div id="8" class="tt">function convertCtoF() {<br>
+    let celsius = parseFloat(prompt("Enter temperature in Celsius:"));<br>
+    let fahrenheit = (celsius * 9/5) + 32;<br>
+    alert(celsius + "°C is equal to " + fahrenheit + "°F.");<br>
+  } <br>
+  </div>
 
 
 <div id="ex" class="ex">
-    <p>1.SOMME
+    <p>9. Convertir les heures en minutes
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="twelve()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
+        <p>Convertissez l'heure de Celsius en Fahrenheit. Utilisez la formule de conversion standard.</p>
+        <button onclick="nine()">Voir la solution</button> <button onclick="HtoM()">Voir la démonstration</button>
     </p>
 </div>
 
-<div id="5" class="tt"></div>
+<div id="9" class="tt"> function HtoM(){ <br>
+    let hours = parseFloat(prompt("Enter hours:")); <br>
+    let min = hours*60;<br>
+    alert(hours + " hours is equal to " + min + " minutes.");<br>
+    }<br>
+</div>
+
 
 
 <div id="ex" class="ex">
-    <p>1.SOMME
+    <p>10.Trouver le carré d'un nombre
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="thirteen()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
+        <p>Calcule le carré d'un nombre donné. Affiche le résultat.</p>
+        <button onclick="ten()">Voir la solution</button>   <button onclick="carreNombre()">Voir la démonstration</button>
     </p>
 </div>
 
-<div id="5" class="tt"></div>
+<div id="10" class="tt">function carreNombre() { <br>
+    let nombre = parseFloat(prompt("Entrez un nombre :"));<br>
+    alert("Le carré de " + nombre + " est " + (nombre * nombre) + ".");<br>
+  }</div>
 
 
 <div id="ex" class="ex">
-    <p>1.SOMME
+    <p>11.Convertir une chaîne en majuscules
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="fourteen()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
+        <p>Transforme une chaîne de caractères en majuscules. Affiche le résultat.</p>
+        <button onclick="eleven()">Voir la solution</button>   <button onclick="convertirMajuscules()">Voir la démonstration</button>
     </p>
 </div>
 
-<div id="5" class="tt"></div>
+<div id="11" class="tt">function convertirMajuscules() { <br>
+    let chaine = prompt("Entrez une chaîne :"); <br>
+    alert("En majuscules : " + chaine.toUpperCase()); <br>
+  } <br>
+  </div>
 
 
 <div id="ex" class="ex">
-    <p>2.SOMME
+    <p>12.Afficher un triangle d'étoiles
         <br>
-        <p>Ecrire une fonction qui prendr deux nombres en entrée et retourne leur somme</p>
-        <button onclick="fifteen()">Voir la solution</button>   <button onclick="">Voir la démonstration</button>
+        <p>Affiche un triangle d'étoiles selon la hauteur spécifiée. Utilise des boucles.
+        </p>
+        <button onclick="twelve()">Voir la solution</button>   <button onclick="triangleEtoiles()">Voir la démonstration</button>
     </p>
 </div>
 
-<div id="5" class="tt"></div>
+<div id="12" class="tt">function triangleEtoiles() {<br>
+    let hauteur = parseInt(prompt("Entrez la hauteur du triangle :"));<br>
+    let triangle = "";<br>
+    for (let i = 1; i <= hauteur; i++) {<br>
+      triangle += "*".repeat(i) + "\n";<br>
+    }<br>
+    alert(triangle);<br>
+} <br>
+  </div>
+
+
+<div id="ex" class="ex">
+    <p>13.Compter les mots dans une phrase
+        <br>
+        <p>Compte le nombre de mots dans une phrase. Affiche le total.</p>
+        <button onclick="thirteen()">Voir la solution</button>   <button onclick="compterMots()">Voir la démonstration</button>
+    </p>
+</div>
+
+<div id="13" class="tt">function compterMots() {<br>
+    let phrase = prompt("Entrez une phrase :");<br>
+    let totalMots = phrase.split(" ").filter(mot => mot.trim() !== "").length; <br>
+    alert("Nombre de mots : " + totalMots);<br>
+  } <br>
+  </div>
+
+
+<div id="ex" class="ex">
+    <p>14. Convertir une chaîne en minuscules
+        <br>
+        <p>Transforme une chaîne de caractères en minuscules. Affiche le résultat.</p>
+        <button onclick="fourteen()">Voir la solution</button>   <button onclick="convertirMinuscules()">Voir la démonstration</button>
+    </p>
+</div>
+
+<div id="14" class="tt">function convertirMinuscules() { <br>
+    let chaine = prompt("Entrez une chaîne EN MAJ :"); <br>
+    alert("En minuscules : " + chaine.toLowerCase()); <br>
+  } <br>
+  </div>
+
+
+<div id="ex" class="ex">
+    <p>15.Compter les mots dans une phrase
+        <br>
+        <p>Compte le nombre de mots dans une phrase. Affiche le total.</p>
+        <button onclick="fifteen()">Voir la solution</button>   <button onclick="jeuDevineMot()">Voir la démonstration</button>
+    </p>
+</div>
+
+<div id="15" class="tt">function jeuDevineMot() { <br>
+    const motSecret = "chat"; // Word to guess <br>
+    let essaisRestants = 3; // Number of attempts <br>
+    
+    alert("Bienvenue au jeu du mot mystère !"); <br>
+    alert("Vous devez deviner un mot secret en trois tentatives."); <br>
+    
+    while (essaisRestants > 0) { <br>
+      let proposition = prompt("Entrez votre mot (essais restants : " + essaisRestants + ") :");<br>
+      if (proposition === motSecret) { <br>
+        alert("Félicitations ! Vous avez trouvé le mot : " + motSecret);<br>
+        return;<br>
+      } else {<br>
+        essaisRestants--;<br>
+        alert("Mauvais mot. Essayez encore.");<br>
+      }<br>
+    }<br>
+    <br>
+    alert("Dommage ! Vous avez perdu. Le mot était : " + motSecret);<br>
+  }<br>
+  </div>
 
 
 <footer></footer>

@@ -149,116 +149,204 @@ function checkPrimeNumber() {
   function seven()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('7').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('7').style='display:block';
           x=0;
       }
   }
+
+  function multiplicationTable() {
+    let num = parseInt(prompt("Enter a number to display its multiplication table:"));
+    let result = "";
+    for (let i = 1; i <= 10; i++) {
+      result += num + " x " + i + " = " + (num * i) + "\n";
+    }
+    alert(result);
+  }
+  
 
   var x = 0;
   function eight()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('8').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('8').style='display:block';
           x=0;
       }
   }
+
+
+  function convertCtoF() {
+    let celsius = parseFloat(prompt("Enter temperature in Celsius:"));
+    let fahrenheit = (celsius * 9/5) + 32;
+    alert(celsius + "°C is equal to " + fahrenheit + "°F.");
+  }
+  
 
   var x = 0;
   function nine()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('9').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('9').style='display:block';
           x=0;
       }
   }
+
+  function HtoM(){
+    let hours = parseFloat(prompt("Enter hours:"));
+    let min = hours*60;
+    alert(hours + " hours is equal to " + min + " minutes.");
+    }
+
+
+
 
   var x = 0;
   function ten()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('10').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('10').style='display:block';
           x=0;
       }
   }
 
+function carreNombre() {
+    let nombre = parseFloat(prompt("Entrez un nombre :"));
+    alert("Le carré de " + nombre + " est " + (nombre * nombre) + ".");
+  }
+
+  
   var x = 0;
   function eleven()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('11').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('11').style='display:block';
           x=0;
       }
   }
+
+  function convertirMajuscules() {
+    let chaine = prompt("Entrez une chaîne :");
+    alert("En majuscules : " + chaine.toUpperCase());
+  }
+
+  
 
   var x = 0;
   function twelve()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('12').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('12').style='display:block';
           x=0;
       }
   }
+
+  function triangleEtoiles() {
+    let hauteur = parseInt(prompt("Entrez la hauteur du triangle :"));
+    let triangle = "";
+    for (let i = 1; i <= hauteur; i++) {
+      triangle += "*".repeat(i) + "\n";
+    }
+    alert(triangle);
+  }
+  
 
   var x = 0;
   function thirteen()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('13').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('13').style='display:block';
           x=0;
       }
   }
+
+
+  function compterMots() {
+    let phrase = prompt("Entrez une phrase :");
+    let totalMots = phrase.split(" ").filter(mot => mot.trim() !== "").length;
+    alert("Nombre de mots : " + totalMots);
+  }
+
+  
 
   var x = 0;
   function fourteen()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('14').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('14').style='display:block';
           x=0;
       }
   }
+
+function convertirMinuscules() {
+  let chaine = prompt("Entrez une chaîne EN MAJ :");
+  alert("En minuscules : " + chaine.toLowerCase());
+}
+
 
 
   var x = 0;
   function fifteen()
   {
       if(x==0){
-          document.getElementById('4').style='display:none';
+          document.getElementById('15').style='display:none';
           x=1;
       }    
       else{
-          document.getElementById('4').style='display:block';
+          document.getElementById('15').style='display:block';
           x=0;
       }
   }
+
+  function jeuDevineMot() {
+    const motSecret = "chat"; // Word to guess
+    let essaisRestants = 3; // Number of attempts
+    
+    alert("Bienvenue au jeu du mot mystère !");
+    alert("Vous devez deviner un mot secret en trois tentatives.");
+    
+    while (essaisRestants > 0) {
+      let proposition = prompt("Entrez votre mot (essais restants : " + essaisRestants + ") :");
+      if (proposition === motSecret) {
+        alert("Félicitations ! Vous avez trouvé le mot : " + motSecret);
+        return;
+      } else {
+        essaisRestants--;
+        alert("Mauvais mot. Essayez encore.");
+      }
+    }
+    
+    alert("Dommage ! Vous avez perdu. Le mot était : " + motSecret);
+  }
+  
+  
