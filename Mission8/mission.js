@@ -17,9 +17,9 @@ function one()
 function oddeven(){
     var v = prompt("Donner la nombre");
     if(v%2==0)
-    alert("EVEN");
+    alert("PAIR");
     else
-    alert("ODD");
+    alert("IMPAIR");
 }
 
 
@@ -42,14 +42,14 @@ function guessTheNumber() {
     let secretNumber = Math.floor(Math.random() * 100) + 1;
     let guess;
     do {
-      guess = parseInt(prompt("Guess a number between 1 and 100:"));
+      guess = parseInt(prompt("Devinez un nombre entre 1 et 100 :"));
       if (guess < secretNumber) {
-        alert("Too low! Try again.");
+        alert("Trop bas ! Réessayez.");
       } else if (guess > secretNumber) {
-        alert("Too high! Try again.");
+        alert("Trop haut ! Réessayez.");
       }
     } while (guess !== secretNumber);
-    alert("Congratulations! You guessed the correct number: " + secretNumber);
+    alert("Félicitations ! Vous avez deviné le bon numéro : " + secretNumber);
   }
   
   var x = 0;
@@ -66,8 +66,8 @@ function three()
 }
 
   function v_age() {
-    let age = parseInt(prompt("Enter your age:"));
-    alert(age >= 18 ? "You are eligible to vote." : "You are not eligible to vote.");
+    let age = parseInt(prompt("Entrez votre âge:"));
+    alert(age >= 18 ? "Vous avez le droit de voter." : "Vous n’avez pas le droit de voter.");
   }
   
 
@@ -85,7 +85,7 @@ function four()
 }
 
 function checkPrimeNumber() {
-    let num = parseInt(prompt("Enter a number to check if it's prime:"));
+    let num = parseInt(prompt("Entrez un nombre pour vérifier s'il est premier:"));
     let isPrime = num > 1;
   
     for (let i = 2; i <= Math.sqrt(num); i++) {
@@ -95,7 +95,7 @@ function checkPrimeNumber() {
       }
     }
   
-    alert(num + (isPrime ? " is a prime number." : " is not a prime number."));
+    alert(num + (isPrime ? " est un nombre premier." : " n'est pas un nombre premier."));
   }
   
 
@@ -116,9 +116,9 @@ function checkPrimeNumber() {
   }
 
   function countVowels() {
-    let str = prompt("Enter a string:");
+    let str = prompt("Entrez une chaîne :");
     let vowels = str.match(/[aeiouy]/gi);
-    alert("The number of vowels is: " + (vowels ? vowels.length : 0));
+    alert("Le nombre de voyelles est :" + (vowels ? vowels.length : 0));
   }
   
 
@@ -138,10 +138,10 @@ function checkPrimeNumber() {
 
 
   function percentage() {
-    let marks = parseFloat(prompt("Enter total marks obtained:"));
-    let totalMarks = parseFloat(prompt("Enter maximum marks:"));
+    let marks = parseFloat(prompt("Entrez le total des notes obtenues :"));
+    let totalMarks = parseFloat(prompt("Entrez les notes maximales :"));
     let percentage = (marks / totalMarks) * 100;
-    alert("Your percentage is: " + percentage + "%");
+    alert("Votre pourcentage est : " + percentage + "%");
   }
 
 
@@ -159,7 +159,7 @@ function checkPrimeNumber() {
   }
 
   function multiplicationTable() {
-    let num = parseInt(prompt("Enter a number to display its multiplication table:"));
+    let num = parseInt(prompt("Entrez un nombre pour afficher sa table de multiplication :"));
     let result = "";
     for (let i = 1; i <= 10; i++) {
       result += num + " x " + i + " = " + (num * i) + "\n";
@@ -183,9 +183,9 @@ function checkPrimeNumber() {
 
 
   function convertCtoF() {
-    let celsius = parseFloat(prompt("Enter temperature in Celsius:"));
+    let celsius = parseFloat(prompt("Entrez la température en degrés Celsius :"));
     let fahrenheit = (celsius * 9/5) + 32;
-    alert(celsius + "°C is equal to " + fahrenheit + "°F.");
+    alert(celsius + "°C est égal à " + fahrenheit + "°F.");
   }
   
 
@@ -203,9 +203,9 @@ function checkPrimeNumber() {
   }
 
   function HtoM(){
-    let hours = parseFloat(prompt("Enter hours:"));
+    let hours = parseFloat(prompt("Entrez les heures::"));
     let min = hours*60;
-    alert(hours + " hours is equal to " + min + " minutes.");
+    alert(hours + " les heures sont égales à" + min + " minutes.");
     }
 
 

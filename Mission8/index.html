@@ -9,18 +9,18 @@
 </head>
 
 <body>
-  <button><a href="../index.html">HOME</a></button>
 <header>
         <h1><u>Exersice avec JAVA</u></h1>
 </header>
-
+<button><a href="../index.html">HOME</a></button>
+<main>
 <div class="main">
 
 <h3>Exercice Disponible</h3>
 
 
 <div id="ex" class="ex">
-    <p>1. ODD or EVEN
+    <p>1. PAIR ou IMPAIR
         <br>
         <p>Ecrivez un nombre dans l'arc et il vous dira s'il s'agit d'un nombre IMPAIR ou d'un nombre PAIR.</p>
         <button onclick="one()">Voir la solution</button>   <button onclick="oddeven()" class="t1">Voir la démonstration</button>
@@ -30,9 +30,9 @@
         Function one(){<br>
             var v = prompt("Donner la nombre");<br>
             if(v%2==0)<br>
-            alert("EVEN");<br>
+            alert("PAIR");<br>
             else<br>
-            alert("ODD");<br>
+            alert("IMPAIR");<br>
         }<br>
 </p>
 </div>
@@ -52,14 +52,14 @@
         let secretNumber = Math.floor(Math.random() * 100) + 1; <br>
         let guess;<br>
         do {<br>
-          guess = parseInt(prompt("Guess a number between 1 and 100:"));<br>
+          guess = parseInt(prompt("Devinez un nombre entre 1 et 100:"));<br>
           if (guess < secretNumber) { <br>
-            alert("Too low! Try again."); <br>
+            alert("Trop bas ! Réessayez."); <br>
           } else if (guess > secretNumber) { <br>
-            alert("Too high! Try again.");<br>
+            alert("Trop haut ! Réessayez.");<br>
           } <br>
         } while (guess !== secretNumber);<br>
-        alert("Congratulations! You guessed the correct number: " + secretNumber);<br>
+        alert("Félicitations ! Vous avez deviné le bon numéro : " + secretNumber);<br>
       }</p>
 </div>
 
@@ -73,8 +73,8 @@
         <button onclick="three()">Voir la solution</button>   <button onclick="v_age()">Voir la démonstration</button>
     </p>
     <div id="3" class="tt">function v_age() {<br>
-        let age = parseInt(prompt("Enter your age:"));<br>
-        alert(age >= 18 ? "You are eligible to vote." : "You are not eligible to vote.");<br>
+        let age = parseInt(prompt("Entrez votre âge:"));<br>
+        alert(age >= 18 ? "Vous avez le droit de voter." : "Vous n’avez pas le droit de voter.");<br>
       }</div>
 </div>
 
@@ -86,7 +86,7 @@
         <button onclick="four()">Voir la solution</button>   <button onclick="checkPrimeNumber()">Voir la démonstration</button>
     </p>
     <div id="4" class="tt">function checkPrimeNumber() { <br>
-        let num = parseInt(prompt("Enter a number to check if it's prime:"));<br>
+        let num = parseInt(prompt("Entrez un nombre pour vérifier s'il est premier:"));<br>
         let isPrime = num > 1;<br>
       
         for (let i = 2; i <= Math.sqrt(num); i++) { <br>
@@ -96,7 +96,7 @@
           } <br>
         } <br>
       
-        alert(num + (isPrime ? " is a prime number." : " is not a prime number.")); <br>
+        alert(num + (isPrime ? " est un nombre premier." : " n'est pas un nombre premier.")); <br>
       }</div>
 </div>
 
@@ -111,9 +111,9 @@
     </p>
 
 <div id="5" class="tt">  function countVowels() { <br>
-    let str = prompt("Enter a string:"); <br>
+    let str = prompt("Entrez une chaîne :"); <br>
     let vowels = str.match(/[aeiouy]/gi); <br>
-    alert("The number of vowels is: " + (vowels ? vowels.length : 0)); <br>
+    alert("Le nombre de voyelles est : " + (vowels ? vowels.length : 0)); <br>
   }</div>
 
 </div>
@@ -127,16 +127,16 @@
         <p>Calculez le pourcentage à partir des notes obtenues. Nécessite le total des notes et les notes obtenues.</p>
         <button onclick="six()">Voir la solution</button>   <button onclick="percentage()">Voir la démonstration</button>
     </p>
-</div>
+
 
 <div id="6" class="tt">function percentage() { <br>
-    let marks = parseFloat(prompt("Enter total marks obtained:")); <br>
-    let totalMarks = parseFloat(prompt("Enter maximum marks:")); <br>
+    let marks = parseFloat(prompt("Entrez le total des notes obtenues :")); <br>
+    let totalMarks = parseFloat(prompt("Entrez les notes maximales :")); <br>
     let percentage = (marks / totalMarks) * 100; <br>
-    alert("Your percentage is: " + percentage + "%"); <br>
+    alert("Votre pourcentage est : " + percentage + "%"); <br>
   }</div>
 
-
+</div>
 
 
 
@@ -146,10 +146,10 @@
         <p>Génère la table de multiplication d'un nombre. Affiche les résultats de 1 à 10.</p>
         <button onclick="seven()">Voir la solution</button>   <button onclick="multiplicationTable() ">Voir la démonstration</button>
     </p>
-</div>
+
 
 <div id="7" class="tt">function multiplicationTable() {<br>
-    let num = parseInt(prompt("Enter a number to display its multiplication table:"));<br>
+    let num = parseInt(prompt("Entrez un nombre pour afficher sa table de multiplication :"));<br>
     let result = "";<br>
     for (let i = 1; i <= 10; i++) { <br>
       result += num + " x " + i + " = " + (num * i) + "\n"; <br>
@@ -157,7 +157,7 @@
     alert(result); <br>
     } <br>
   </div>
-
+</div>
 
 
 
@@ -168,15 +168,14 @@
         <p>Convertit la température de degrés Celsius en degrés Fahrenheit. Utilise la formule de conversion standard.</p>
         <button onclick="eight()">Voir la solution</button>   <button onclick="convertCtoF()">Voir la démonstration</button>
     </p>
-</div>
 
 <div id="8" class="tt">function convertCtoF() {<br>
-    let celsius = parseFloat(prompt("Enter temperature in Celsius:"));<br>
+    let celsius = parseFloat(prompt("Entrez la température en degrés Celsius :"));<br>
     let fahrenheit = (celsius * 9/5) + 32;<br>
-    alert(celsius + "°C is equal to " + fahrenheit + "°F.");<br>
+    alert(celsius + "°C est égal à " + fahrenheit + "°F.");<br>
   } <br>
   </div>
-
+</div>
 
 <div id="ex" class="ex">
     <p>9. Convertir les heures en minutes
@@ -184,15 +183,15 @@
         <p>Convertissez l'heure de Celsius en Fahrenheit. Utilisez la formule de conversion standard.</p>
         <button onclick="nine()">Voir la solution</button> <button onclick="HtoM()">Voir la démonstration</button>
     </p>
-</div>
+
 
 <div id="9" class="tt"> function HtoM(){ <br>
-    let hours = parseFloat(prompt("Enter hours:")); <br>
+    let hours = parseFloat(prompt("Entrez les heures:")); <br>
     let min = hours*60;<br>
-    alert(hours + " hours is equal to " + min + " minutes.");<br>
+    alert(hours + " les heures sont égales à " + min + " minutes.");<br>
     }<br>
 </div>
-
+</div>
 
 
 <div id="ex" class="ex">
@@ -201,13 +200,13 @@
         <p>Calcule le carré d'un nombre donné. Affiche le résultat.</p>
         <button onclick="ten()">Voir la solution</button>   <button onclick="carreNombre()">Voir la démonstration</button>
     </p>
-</div>
+
 
 <div id="10" class="tt">function carreNombre() { <br>
     let nombre = parseFloat(prompt("Entrez un nombre :"));<br>
     alert("Le carré de " + nombre + " est " + (nombre * nombre) + ".");<br>
   }</div>
-
+</div>
 
 <div id="ex" class="ex">
     <p>11.Convertir une chaîne en majuscules
@@ -215,14 +214,14 @@
         <p>Transforme une chaîne de caractères en majuscules. Affiche le résultat.</p>
         <button onclick="eleven()">Voir la solution</button>   <button onclick="convertirMajuscules()">Voir la démonstration</button>
     </p>
-</div>
+
 
 <div id="11" class="tt">function convertirMajuscules() { <br>
     let chaine = prompt("Entrez une chaîne :"); <br>
     alert("En majuscules : " + chaine.toUpperCase()); <br>
   } <br>
   </div>
-
+</div>
 
 <div id="ex" class="ex">
     <p>12.Afficher un triangle d'étoiles
@@ -231,7 +230,7 @@
         </p>
         <button onclick="twelve()">Voir la solution</button>   <button onclick="triangleEtoiles()">Voir la démonstration</button>
     </p>
-</div>
+
 
 <div id="12" class="tt">function triangleEtoiles() {<br>
     let hauteur = parseInt(prompt("Entrez la hauteur du triangle :"));<br>
@@ -242,7 +241,7 @@
     alert(triangle);<br>
 } <br>
   </div>
-
+</div>
 
 <div id="ex" class="ex">
     <p>13.Compter les mots dans une phrase
@@ -250,7 +249,6 @@
         <p>Compte le nombre de mots dans une phrase. Affiche le total.</p>
         <button onclick="thirteen()">Voir la solution</button>   <button onclick="compterMots()">Voir la démonstration</button>
     </p>
-</div>
 
 <div id="13" class="tt">function compterMots() {<br>
     let phrase = prompt("Entrez une phrase :");<br>
@@ -258,7 +256,7 @@
     alert("Nombre de mots : " + totalMots);<br>
   } <br>
   </div>
-
+</div>
 
 <div id="ex" class="ex">
     <p>14. Convertir une chaîne en minuscules
@@ -266,14 +264,13 @@
         <p>Transforme une chaîne de caractères en minuscules. Affiche le résultat.</p>
         <button onclick="fourteen()">Voir la solution</button>   <button onclick="convertirMinuscules()">Voir la démonstration</button>
     </p>
-</div>
 
 <div id="14" class="tt">function convertirMinuscules() { <br>
     let chaine = prompt("Entrez une chaîne EN MAJ :"); <br>
     alert("En minuscules : " + chaine.toLowerCase()); <br>
   } <br>
   </div>
-
+</div>
 
 <div id="ex" class="ex">
     <p>15.Compter les mots dans une phrase
@@ -281,7 +278,7 @@
         <p>Compte le nombre de mots dans une phrase. Affiche le total.</p>
         <button onclick="fifteen()">Voir la solution</button>   <button onclick="jeuDevineMot()">Voir la démonstration</button>
     </p>
-</div>
+
 
 <div id="15" class="tt">function jeuDevineMot() { <br>
     const motSecret = "chat"; // Word to guess <br>
@@ -304,9 +301,9 @@
     alert("Dommage ! Vous avez perdu. Le mot était : " + motSecret);<br>
   }<br>
   </div>
-
-
-<footer></footer>
+</div>
+</main>
+<footer><p>Created By THIVAIN MENIKBOWE</p></footer>
 
 </div>
 </body>
