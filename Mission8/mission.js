@@ -115,7 +115,7 @@ function checkPrimeNumber() {
   }
   
 
-
+//The Math.sqrt() method returns the square root of a number.
 
 
   var x = 0;
@@ -137,7 +137,7 @@ function checkPrimeNumber() {
     alert("Le nombre de voyelles est :" + (vowels ? vowels.length : 0));
   }
   
-
+//str.match with the (condition) to search if there'is smthing which match to these conditions. 
 
   var x = 0;
   function six()
@@ -159,6 +159,8 @@ function checkPrimeNumber() {
     let percentage = (marks / totalMarks) * 100;
     alert("Votre pourcentage est : " + percentage + "%");
   }
+
+//Here we have basic maths. we take the response from the user and we put it in a variable which do the calculs.
 
 
   var x = 0;
@@ -183,7 +185,8 @@ function checkPrimeNumber() {
     alert(result);
   }
   
-
+// We take a number from the user and do 10 rounds . When we do the 10 round this will end.
+//for each round we take the number given and multiply by every number.
   var x = 0;
   function eight()
   {
