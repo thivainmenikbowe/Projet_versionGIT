@@ -22,6 +22,10 @@ function oddeven(){
     alert("IMPAIR");
 }
 
+//Here we create a variable called "v" and we gave a condition , if v / 2 = 0 it willbe even otherwise itll be odd. "If" with "else" we use to have a different results.
+//We gave a condition if the result = to 0 , with else we want the every results which not 0.
+// "Prompt" is to recieve the text box from top of the site and "Alert" is for give the results. It'll appere from the top of the site.
+//I'm usins IF ELSE IF and ELSE most of the time in these exercises.
 
 
 var x = 0;
@@ -37,6 +41,8 @@ function two()
     }
 }
 
+// Here we have normally the same function but this is for the buttons. I want the buttons to appere when i touch the button. So i use css to do that.
+
 
 function guessTheNumber() {
     let secretNumber = Math.floor(Math.random() * 100) + 1;
@@ -51,7 +57,12 @@ function guessTheNumber() {
     } while (guess !== secretNumber);
     alert("Félicitations ! Vous avez deviné le bon numéro : " + secretNumber);
   }
-  
+
+// Here we use math.random to generate a random number between 1 and 100. 
+//We use "do" as a replace for function "for" as a loop. With do, we can "While" with if and else.
+//If and Else we already knows
+//While is for break the function from the repeating when the answer is correct.
+
   var x = 0;
 function three()
 {
@@ -69,7 +80,12 @@ function three()
     let age = parseInt(prompt("Entrez votre âge:"));
     alert(age >= 18 ? "Vous avez le droit de voter." : "Vous n’avez pas le droit de voter.");
   }
-  
+
+//The parseInt method parses a value as a string and returns the first integer.
+//let is a function that we use to let the user to give a value.
+//Here we use the function if and else but in a different way.
+// if the age >= 18 we take the 1 result before the ":" else we take the second result.
+
 
   var x = 0;
 function four()
