@@ -252,7 +252,9 @@ function carreNombre() {
     alert("Le carré de " + nombre + " est " + (nombre * nombre) + ".");
   }
 
-  
+// This is a very simple formula. We take the num given  by the user and multiply it by the same number.
+
+
   var x = 0;
   function eleven()
   {
@@ -271,7 +273,8 @@ function carreNombre() {
     alert("En majuscules : " + chaine.toUpperCase());
   }
 
-  
+  // Only thing different is the new thing called "touppercse" which let us to convert the characters in to capital.
+  // By using toLowercase we can do the opposit.
 
   var x = 0;
   function twelve()
@@ -296,6 +299,7 @@ function carreNombre() {
   }
   
 
+
   var x = 0;
   function thirteen()
   {
@@ -317,6 +321,8 @@ function carreNombre() {
   }
 
   
+// Split us a terrm with the same meaning of devide/space something. We take the space between two words.
+// We count everything between a space. And take it as a word.
 
   var x = 0;
   function fourteen()
@@ -336,7 +342,8 @@ function convertirMinuscules() {
   alert("En minuscules : " + chaine.toLowerCase());
 }
 
-
+// The opposit of ToUppercase.
+//This is to convert letters in to simple.
 
   var x = 0;
   function fifteen()
