@@ -207,6 +207,9 @@ function checkPrimeNumber() {
     alert(celsius + "°C est égal à " + fahrenheit + "°F.");
   }
   
+//We let user to put a number. The formule which contains the convertion rate of celsius to fahrenheit take the number.
+// And covert it by using the formula.
+
 
   var x = 0;
   function nine()
@@ -227,6 +230,7 @@ function checkPrimeNumber() {
     alert(hours + " les heures sont égales à" + min + " minutes.");
     }
 
+// This one i use by myself using the samee methode of the previous one.
 
 
 
