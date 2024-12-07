@@ -1,8 +1,8 @@
 h1 {
     text-align: center;
-    font-size: 2.5rem; /* Use relative units for responsiveness */
+    font-size: 2.5rem; /* changed the units to rem because for the responsive page */
     color: rgb(199, 0, 0);
-    text-shadow: 1px 1px 3px black; /* Adjusted for better visibility */
+    text-shadow: 1px 1px 3px black; 
     text-overflow: inherit;
     text-decoration: solid;
 }
@@ -69,7 +69,7 @@ body {
     margin: auto;
     font-size: 1.2rem;
     background-color: rgb(114, 189, 255);
-    min-height: 130px; /* Changed for better adaptability */
+    min-height: 130px;
     padding: 20px;
     border-radius: 5px;
     opacity: 85%;
@@ -111,7 +111,7 @@ button:hover {
     border-radius: 5px;
     padding: 10px 0;
     opacity: 85%;
-    width: calc(100% - 40px); /* Adjust for small screens */
+    width: calc(100% - 40px); 
 }
 
 /* Responsive Styles */
@@ -124,7 +124,7 @@ button:hover {
         margin: 10px auto;
     }
     button {
-        width: calc(25% - 20px); /* Make buttons full width */
+        width: calc(25% - 20px); /* Make buttons much more easy to acces.*/
         margin: 10px 0;
         
     }
