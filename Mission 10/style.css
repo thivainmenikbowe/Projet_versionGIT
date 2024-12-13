@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5f4ff;
+    color: #333;
+}
+
+.invoice-container {
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #d8f0f8;
+    border: 1px solid #aacce3;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #aacce3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #016b85;
+    font-size: 24px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.details div {
+    width: 48%;
+}
+
+.details h3 {
+    color: #016b85;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table thead th {
+    background-color: #016b85;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table tbody tr td {
+    padding: 10px;
+    border: 1px solid #aacce3;
+}
+
+table tbody tr td input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+table tbody tr.lastrow td {
+    font-weight: bold;
+    background-color: #e9f8ff;
+}
+
+.totals {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.totals p {
+    margin: 5px 0;
+}
+
+.totals .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #070d0e;
+}
+
+input.readonly {
+    background-color: #f0f0f0;
+    color: #ff3434;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+#sold{
+    color: #ff3434;
+}

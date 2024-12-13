@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <div>
+                <h1>FACTURE</h1>
+                <p>Date: 26/01/2023</p>
+            </div>
+            <div>
+                <p>No. de facture: 12345</p>
+            </div>
+        </div>
+
+        <div class="details">
+            <div>
+                <h3>Destinataire</h3>
+                <p>Nom: <input type="text"></p>
+                <p>Adresse: <input type="text"></p>
+                <p>Téléphone: <input type="number"></p>
+                <p>Email: <input type="text"></p>
+            </div>
+            <div>
+                <h3>Envoyer à</h3>
+                <p>Nom: <input type="text"></p>
+                <p>Adresse: <input type="text"></p>
+                <p>Téléphone: <input type="number"></p>
+                <p>Email: <input type="text"></p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row ">
+                    <td><input type="text" id="desc" name="desc" class="input desc" value="desc1"></td>
+                    <td><input type="text" id="qte" name="qte" class="input qte" value="10"></td>
+                    <td><input type="text" id="prix" name="prix" class="input prix" value="10"></td>
+                    <td><input type="text" id="total" name="total" class="readonly" value="0.00"></td>
+                </tr>
+                <tr class="row ">
+                    <td><input type="text" id="desc" name="desc" class="input desc" value="desc3"></td>
+                    <td><input type="text" id="qte" name="qte" class="input qte" value="0"></td>
+                    <td><input type="text" id="prix" name="prix" class="input prix" value="0"></td>
+                    <td><input type="text" id="total" name="total" class="readonly" value="0.00"></td>
+                </tr>
+                <tr class="row " id="modeleLigne">
+                    <td><input type="text" id="desc" name="desc" class="input desc" value="desc3"></td>
+                    <td><input type="text" id="qte" name="qte" class="input qte" value="0"></td>
+                    <td><input type="text" id="prix" name="prix" class="input prix" value="0"></td>
+                    <td><input type="text" id="total" name="total" class="readonly" value="0.00"></td>
+                </tr>
+                <tr class="row lastrow" id="lastrow">
+                    <td><input type="text" id="desc" name="desc" class="input desc" value="desc4"></td>
+                    <td><input type="text" id="qte" name="qte" class="input" value="0"></td>
+                    <td><input type="text" id="prix" name="prix" class="input" value="0"></td>
+                    <td><input type="text" id="total" name="total" class="readonly" value="0.00"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="totals">
+            <p>Sous-total: <input type="number" id="stotal" name="stotal" class="readonly" value="0.00"></p>
+            <p>Remise: <input type="number" id="remise" name="remise" class="readonly" value="0.00"></p>
+            <p>Sous-total après remise: <input type="number" id="st" name="st" class="readonly" value="0.00"></p>
+            <p>Taxe (10%): <input type="number" id="tax" name="tax" class="readonly" value="0.00"></p>
+            <p>Expédition: <input type="number" id="pre" name="pre" class="readonly" value="0.00"></p>
+            <p class="total">Solde dû:<input id="sold" type="sold" name="sold" class="readonly" value="0.00"></p>
+        </div>
+        <div class="buttons">
+            <button onclick="cal()">Calculer</button>
+            <button onclick="ajout()">Ajouter une ligne</button>
+            <button onclick="remplir()">Remplir automatiquement</button>
+            <button onclick="annuler()">Annuler</button>
+        </div>
+    </div>
+</body>
+</html>
